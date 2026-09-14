@@ -32,8 +32,8 @@ The objectives of this project are to:
 
 ### Target Classes
 
-* `ckd` → 1
-* `notckd` → 0
+* `ckd` = 1
+* `notckd` = 0
 
 The dataset contains patient information such as blood pressure, blood glucose, blood-related measurements, hypertension, diabetes, anemia, appetite, and other medical factors.
 
