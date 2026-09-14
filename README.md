@@ -6,7 +6,7 @@ This project compares two machine learning classifiers for **Chronic Kidney Dise
 
 The main focus is on **Recall**, because missing a CKD-positive patient (False Negative) can be more concerning in a medical screening context.
 
----
+
 
 ## Project Objective
 
@@ -21,7 +21,7 @@ The objectives of this project are to:
 * Use 5-Fold Stratified Cross-Validation.
 * Select the better-performing model.
 
----
+
 
 ## Dataset
 
@@ -37,7 +37,7 @@ The objectives of this project are to:
 
 The dataset contains patient information such as blood pressure, blood glucose, blood-related measurements, hypertension, diabetes, anemia, appetite, and other medical factors.
 
----
+
 
 ## Data Preparation
 
@@ -63,7 +63,7 @@ The `affected` feature was especially important because it directly corresponded
 
 After leakage removal, **25 features** were used for modeling.
 
----
+
 
 ## Preprocessing
 
@@ -79,7 +79,7 @@ The same preprocessing approach was used for both models to ensure a fair compar
 
 The preprocessing was included inside the model pipelines to reduce the risk of preprocessing leakage during cross-validation.
 
----
+
 
 ## Train-Test Split
 
@@ -90,7 +90,7 @@ A stratified 80/20 train-test split was used.
 
 Stratification maintained a similar CKD/notCKD distribution in both sets.
 
----
+
 
 ## Models
 
@@ -107,7 +107,7 @@ Configuration:
 * `n_estimators = 200`
 * `random_state = 42`
 
----
+
 
 ## Evaluation Metrics
 
@@ -129,7 +129,7 @@ Recall was prioritized because a False Negative represents a CKD-positive patien
 
 Therefore, reducing False Negatives was the main focus of the model comparison.
 
----
+
 
 ## Test Set Results
 
@@ -149,7 +149,7 @@ For both models:
 * False Positives = 0
 * False Negatives = 0
 
----
+
 
 ## 5-Fold Cross-Validation
 
@@ -166,7 +166,7 @@ Logistic Regression achieved better overall performance and consistency.
 
 Since Recall was the primary metric, **Logistic Regression was selected as the preferred model for this experiment**.
 
----
+
 
 ## Final Recommendation
 
@@ -178,7 +178,7 @@ Since Recall was the primary metric, **Logistic Regression was selected as the p
 * It achieved 100% mean F1-Score.
 * It showed consistent performance across the five folds.
 
----
+
 
 ## Limitations
 
@@ -193,7 +193,6 @@ Important limitations include:
 
 Larger datasets and independent clinical validation would be required before real-world healthcare use.
 
----
 
 ## Technologies Used
 
@@ -206,7 +205,7 @@ Larger datasets and independent clinical validation would be required before rea
 * Google Colab
 * Jupyter Notebook
   
----
+
 
 ## Conclusion
 
